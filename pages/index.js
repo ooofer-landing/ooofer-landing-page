@@ -1,25 +1,44 @@
 import Head from "next/head";
-import Screen from "../components/Screen";
+
+import SignUp from "../components/SignUp";
 
 export default function Home() {
   return (
-    <Screen>
+    <div className="h-screen relative">
       <Head>
         <title>OOOFER</title>
-        <meta name="description" content="Embarace remote working." />
+        <meta name="description" content="Embrace remote work." />
         <link rel="icon" href="/favicon.ico" />
+        {process.env.NODE_ENV === "production" && (
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
+        )}
       </Head>
 
-      <main className="h-screen flex items-center justify-center ">
+      <video
+        className="object-cover min-w-full min-h-full absolute"
+        playsInline
+        muted
+        loop
+        preload="none"
+        poster="/enterprise-loop.mp4"
+      ></video>
+      <div className="min-w-full min-h-full absolute bg-black z-10 opacity-60"></div>
+
+      <div className="z-20 relative min-h-full flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-7xl">
-            <span className="font-light">OOO</span>FER
+          <h1 className="text-6xl font-logothin text-white sm:text-8xl">
+            OOO<span className="font-logobold">FER</span>
           </h1>
-          <p className="max-w-xl mx-auto text-xl text-gray-800">
+          <p className="text-3xl sm:text-5xl text-white font-semibold">
             Embrace remote work.
           </p>
         </div>
-      </main>
-    </Screen>
+      </div>
+      <div className="z-20 absolute bottom-10 min-w-full">
+        <div className="flex justify-center">
+          <SignUp />
+        </div>
+      </div>
+    </div>
   );
 }
