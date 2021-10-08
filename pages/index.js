@@ -20,7 +20,7 @@ export default function Home() {
         muted
         loop
         preload="none"
-        poster="/enterprise-loop.mp4"
+        poster="/enterprise-loop.mp"
       ></video>
       <div className="min-w-full min-h-full absolute bg-black z-10 opacity-60"></div>
 
