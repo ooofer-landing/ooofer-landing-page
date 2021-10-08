@@ -16,11 +16,16 @@ export default function Home() {
 
       <video
         className="object-cover h-screen w-screen absolute"
-        poster="/video-cover.png"
+        autoPlay={true}
+        loop={true}
+        playsInline
+        preload="auto"
+        muted
+        src="/background_video.mp4"
       >
-        <source src="/background_video.mp4" />
+        Video not supported
       </video>
-      <div className="min-w-full min-h-full absolute bg-black z-10 opacity-60"></div>
+      <div className="min-w-full min-h-full absolute bg-black z-10 opacity-70"></div>
 
       <div className="z-20 relative min-h-full flex items-center justify-center">
         <div className="text-center">
