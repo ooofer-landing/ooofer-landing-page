@@ -15,9 +15,7 @@ export default function Home() {
       </Head>
 
       <video
-        width="250"
-        height="250"
-        className="object-cover min-w-full min-h-full absolute"
+        className="object-cover h-screen w-screen absolute"
         poster="/video-cover.png"
       >
         <source src="/background_video.mp4" />
