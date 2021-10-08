@@ -15,13 +15,13 @@ export default function Home() {
       </Head>
 
       <video
+        width="250"
+        height="250"
         className="object-cover min-w-full min-h-full absolute"
-        playsInline
-        muted
-        loop
-        preload="none"
-        poster="/enterprise-loop.mp"
-      ></video>
+        poster="/video-cover.png"
+      >
+        <source src="/background_video.mp4" />
+      </video>
       <div className="min-w-full min-h-full absolute bg-black z-10 opacity-60"></div>
 
       <div className="z-20 relative min-h-full flex items-center justify-center">
