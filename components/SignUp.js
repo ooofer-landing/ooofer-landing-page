@@ -38,7 +38,7 @@ export default function SignUp() {
       </form>
       <p className="mt-3 text-xs text-white opacity-70">
         We care about the protection of your data. Your email address will only be used to
-        share updates about service.
+        share updates about our service.
       </p>
     </div>
   );
