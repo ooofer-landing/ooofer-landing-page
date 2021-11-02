@@ -1,6 +1,7 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import SignUp from "../components/SignUp";
+import SignUp from '../components/SignUp';
+import LinedInIcon from '../components/LinedInIcon';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <title>OOOFER</title>
         <meta name="description" content="Embrace remote work." />
         <link rel="icon" href="/favicon.ico" />
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV === 'production' && (
           <script async src="https://cdn.splitbee.io/sb.js"></script>
         )}
       </Head>
@@ -35,6 +36,8 @@ export default function Home() {
           <p className="text-3xl sm:text-5xl text-white font-semibold">
             Embrace remote work.
           </p>
+          <p className="text-white mt-4 mb-2">Follow us on</p>
+          <LinedInIcon />
         </div>
       </div>
       <div className="z-20 absolute bottom-10 min-w-full">
